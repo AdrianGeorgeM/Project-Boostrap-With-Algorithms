@@ -1,39 +1,55 @@
-Project-Boostrap-With-Algorithms
-https://adriangeorgem.github.io/Project-Boostrap-With-Algorithms/
-Developed Skills
-Deconstruct a computational problem
-Develop an algorithm to solve a problem
-Description
-Les Petits Plats is a website, where users can search for recipes.
+# Project-Boostrap-With-Algorithms
 
-Aim of the project was to create a prototype for the website with a search functionality. A mockup was provided as well as a JSON, containing 50 recipes, to mimic the data structure on the database.
+## Overview
 
-The user should be able to filter recipes along two axes:
+Welcome to **Les Petits Plats**, a website designed for users to search and discover recipes. This project aims to create a prototype for the website with a robust search functionality. A mockup and a JSON dataset containing 50 recipes were provided to simulate the database structure.
 
-A main bar to search for words or groups of letters in the title, ingredients, or description.
-Search by keywords in ingredients, utensils, or appliances.
-Objectives
-CONTENT
-Build the interface using Bootstrap
-SEARCH FUNCTIONALITY
-Preparation
-feature Investigation Form on the main search algorithm to compare the two search algorithms developed and to indicate which is the recommended choice.
-test performance and determine # of operations per second
-UML Activity Diagrams for the core search algorithms
-UML Activity Diagram for the entire search functionality including main serach and keyword search
-Details:
+## Developed Skills
 
-The search must be able to be done via the main field or via the tags (ingredients, utensils or device)
-The main search begins when the user enters 3 characters in the search bar
-The search is updated for each new character entered
-The main search displays the first results as soon as possible
-The ingredients, utensils and device fields of the advanced search only suggest recipes from those present on the page
-Search returns must be an intersection of results. If tags "coconut" and "chocolate" are added to ingredients, results should show only recipes that have both coconut and chocolate
-Requirements
-must pass W3C validation for HTML and CSS without errors
-must be responsive
-use ESLint
-use Bootstrap 4 for the interface
-must use no library for the JavaScript of the search engine
-Challenges & Achievements
-use of modules to organize JavaScript code
+Throughout this project, the following skills have been honed:
+
+- Deconstructing computational problems to identify efficient solutions. 🎯
+- Developing algorithms to implement an effective recipe search functionality. 🔍
+
+## Objectives
+
+### Content
+
+🎨 Building a user-friendly and visually appealing interface using **Bootstrap**.
+🔍 Implementing a powerful search functionality.
+
+### Search Functionality
+
+To achieve this, the following objectives have been accomplished:
+
+#### Preparation
+
+📋 Developing an **Investigation Form** to compare two search algorithms and determine the recommended choice.
+⏱️ Conducting performance tests to measure the number of operations per second for optimal efficiency.
+📊 Creating **UML Activity Diagrams** for the core search algorithms and the entire search functionality, including main search and keyword search.
+
+#### Details
+
+The search functionality allows users to filter recipes along two axes:
+
+1. 🔍 **Main Search**: The use case begins when the user enters at least 3 characters in the main search bar. The system searches for recipes that match the user's entry in the recipe title, recipe ingredient list, or recipe description. The interface is updated with the search results, displaying the first results as soon as possible.
+
+2. 🔑 **Keyword Search**: The user can refine their search using the advanced search fields, such as ingredients, utensils, or devices. As the user fills in the field, keywords that do not correspond to the keystrokes in the field disappear, making the search more efficient. Search results are updated accordingly. The search returns must be an intersection of results, meaning that if the user adds the tags "coconut" and "chocolate" to the ingredients, they will retrieve recipes that have both coconut and chocolate.
+
+## Requirements
+
+To ensure a high-quality and seamless user experience, the project adheres to the following requirements:
+
+- The HTML and CSS code must pass **W3C validation** without errors.
+- The website must be **responsive**, providing a consistent experience across different devices. 📱💻
+- **ESLint** is used to maintain clean and consistent JavaScript code.
+- The user interface is developed using **Bootstrap 4**. 🎉
+- No external library is used for the JavaScript implementation of the search engine.
+
+## Challenges & Achievements
+
+Throughout the project, the following challenges have been tackled and achievements accomplished:
+
+🚀 **Module Organization**: Utilizing **modules** to organize JavaScript code, improving code maintainability and readability.
+
+We are excited to present Les Petits Plats, a website that empowers users to explore a vast collection of delightful recipes through a user-friendly and efficient search functionality. Enjoy your culinary journey with Les Petits Plats! 🍽️🥗🍝
