@@ -1,21 +1,25 @@
 // Helper function to add dropdown options
 const addDropdownOption = (category, name) => {
 	const dropdown = document.querySelector(`#${category}Dropdown .dropdown-body`);
-	dropdown.innerHTML += `<a href="#" onclick='categoryClick(this, "${category}")'>${name}</a>`;
+	if (dropdown) {
+		dropdown.innerHTML += `<a href="#" onclick='categoryClick(this, "${category}")'>${name}</a>`;
+	}
 };
 
 const addNewCategory = (nameCat) => {
 	const categoriesContainer = document.querySelector('#categoriesContainer');
-	categoriesContainer.insertAdjacentHTML(
-		'beforeend',
-		`<li class="categoryRecipes">
-          <span class="nameCat">${nameCat}</span>
-          <span onclick="removeCategory(this)" class="btnRemove bold">
-            <i class="fas fa-times"></i>
-          </span>
-      </li>`
-	);
-	functionSearch();
+	if (categoriesContainer) {
+		categoriesContainer.insertAdjacentHTML(
+			'beforeend',
+			`<li class="categoryRecipes">
+                <span class="nameCat">${nameCat}</span>
+                <span onclick="removeCategory(this)" class="btnRemove bold">
+                    <i class="fas fa-times"></i>
+                </span>
+            </li>`
+		);
+		functionSearch();
+	}
 };
 
 const removeCategory = (e) => {
